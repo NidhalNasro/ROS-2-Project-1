@@ -1,1 +1,17 @@
 ROS 2 - Project 1 
+
+1. Build the Package : 
+cd ~/teleop_ws
+colcon build --packages-select my_teleop_robot --symlink-install
+source install/setup.bash
+sudo apt install -y xterm
+
+
+2.Launch Everything :
+Terminal 1
+source ~/teleop_ws/install/setup.bash
+ros2 launch my_teleop_robot simulation.launch.py
+
+Terminal 2 (RViz)
+source ~/teleop_ws/install/setup.bash
+rviz2 -d ~/teleop_ws/src/my_teleop_robot/rviz/config.rviz
