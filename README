@@ -6,7 +6,6 @@ colcon build --packages-select my_teleop_robot --symlink-install
 source install/setup.bash
 sudo apt install -y xterm
 
-
 2.Launch Everything :
 Terminal 1
 source ~/teleop_ws/install/setup.bash
